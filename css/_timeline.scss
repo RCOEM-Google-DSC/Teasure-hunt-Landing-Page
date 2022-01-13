@@ -101,15 +101,14 @@
 
 
 .card {
-    width: 400px;
-    height: 350px;
+    width: 420px;
+    height: 380px;
     position: relative;
     margin: 20px;
     padding: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background: linear-gradient(135deg, #411616, #2b374b); */
     border-radius: 25px;
     transition: 1s;
 }
@@ -178,10 +177,12 @@
     width: 400px;
     opacity: 0;
     transition: 1s;
+    z-index: 2;
 }
 
 .content h2 {
-    font-size: 3em;
+    font-size: 2.2em;
+    text-transform: capitalize;
 }
 
 .card:hover .content {
