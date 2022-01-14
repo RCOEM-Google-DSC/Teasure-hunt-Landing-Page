@@ -2,7 +2,14 @@
     background-color: black;
     min-height: 100vh;
     padding: 15px;
-    padding-top: 200px;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 100px;
+    }
 }
 
 .timeline-items {
