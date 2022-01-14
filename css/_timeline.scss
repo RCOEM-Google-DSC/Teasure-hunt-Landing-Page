@@ -176,6 +176,7 @@
     color: #fff;
     width: 400px;
     z-index: 2;
+    text-transform: capitalize;
 
     p {
         opacity: 0;
@@ -183,8 +184,8 @@
 
     h2 {
         font-size: 2.5em;
-        text-transform: capitalize;
         transform: translateY(150px);
+        text-transform: uppercase;
     }
 
     p,
