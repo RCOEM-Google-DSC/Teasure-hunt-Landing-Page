@@ -175,18 +175,30 @@
 .content {
     color: #fff;
     width: 400px;
-    opacity: 0;
-    transition: 1s;
     z-index: 2;
-}
 
-.content h2 {
-    font-size: 2.2em;
-    text-transform: capitalize;
-}
+    p {
+        opacity: 0;
+    }
 
-.card:hover .content {
-    opacity: 100%;
+    h2 {
+        font-size: 2.5em;
+        text-transform: capitalize;
+        transform: translateY(150px);
+    }
+
+    p,
+    h2 {
+        transition-duration: 500ms;
+    }
+
+    &:hover p {
+        opacity: 1;
+    }
+
+    &:hover h2 {
+        transform: translate(0, 0);
+    }
 }
 
 @media (max-width: 681px) {
