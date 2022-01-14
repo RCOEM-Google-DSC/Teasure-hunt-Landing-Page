@@ -1,7 +1,3 @@
-window.onload = () => {
-
-}
-
 const second = 1000,
     minute = second * 60,
     hour = minute * 60,
@@ -21,28 +17,29 @@ if (today > birthday) {
 }
 //end
 
-const countDown = new Date(birthday).getTime(),
-    x = setInterval(function () {
+const countDown = new Date(birthday).getTime()
 
-        const now = new Date().getTime(),
-            distance = countDown - now;
+const x = setInterval(function () {
 
-        document.getElementById("day").innerText = Math.floor(distance / (day)),
-            document.getElementById("hour").innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById("minute").innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById("second").innerText = Math.floor((distance % (minute)) / second);
+    const now = new Date().getTime(),
+        distance = countDown - now;
+
+    document.getElementById("day").innerText = Math.floor(distance / (day)),
+        document.getElementById("hour").innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById("minute").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("second").innerText = Math.floor((distance % (minute)) / second);
 
 
-        //do something later when date is reached
-        if (distance < 0) {
-            let cd = document.getElementById("timeLeftHeading")
-            cd.innerHTML = "The hunt has begun ...!"
-            cd.style.color = "red"
-            cd.style.fontSize = "3rem"
+    //do something later when date is reached
+    if (distance < 0) {
+        let cd = document.getElementById("timeLeftHeading")
+        cd.innerHTML = "The hunt has begun ...!"
+        cd.style.color = "red"
+        cd.style.fontSize = "3rem"
 
-            document.getElementsByClassName("countdown")[0].innerHTML = ""
+        document.getElementsByClassName("countdown")[0].innerHTML = ""
 
-            clearInterval(x);
-        }
-        //seconds
-    }, 0)
+        clearInterval(x);
+    }
+    //seconds
+}, 0)
