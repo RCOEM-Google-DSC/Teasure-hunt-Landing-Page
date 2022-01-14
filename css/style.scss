@@ -121,6 +121,20 @@ body {
         cursor: url('./../images/CUR1.png'), pointer;
 
     }
+
+    img {
+        &:hover {
+            transform: scale(1.1);
+            cursor: url('./../images/CUR2.png'), pointer;
+
+        }
+
+        &:active {
+            transform: scale(.9);
+            cursor: url('./../images/CUR1.png'), pointer;
+
+        }
+    }
 }
 
 .footer p {
