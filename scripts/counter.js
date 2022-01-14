@@ -32,8 +32,15 @@ const countDown = new Date(birthday).getTime(),
             document.getElementById("minute").innerText = Math.floor((distance % (hour)) / (minute)),
             document.getElementById("second").innerText = Math.floor((distance % (minute)) / second);
 
+
         //do something later when date is reached
         if (distance < 0) {
+            let cd = document.getElementById("timeLeftHeading")
+            cd.innerHTML = "The hunt has begun ...!"
+            cd.style.color = "red"
+            cd.style.fontSize = "3rem"
+
+            document.getElementsByClassName("countdown")[0].innerHTML = ""
 
             clearInterval(x);
         }
