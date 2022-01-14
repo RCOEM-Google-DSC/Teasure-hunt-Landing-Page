@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@import "./timeline", "./socials", "./faq";
+@import "./banner", "./countDown", "./timeline", "./prizes", "./socials", "./faq";
 
 * {
     margin: 0;
@@ -12,6 +12,10 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 #mobile-screen {
@@ -36,10 +40,10 @@ body {
 
 @media (max-width: 960px) {
     body {
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
 
-#mobile-screen {
-    display: flex;
-}
+    #mobile-screen {
+        display: flex;
+    }
 }

@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 
+    <!-- count down -->
+    <script src="./scripts/counter.js"></script>
+
     <!-- faq -->
     <script src="./scripts/faq.js"></script>
 
@@ -18,12 +21,51 @@
 
 <body>
 
+    <!-- when page is opened in mobile -->
     <section id="mobile-screen">
         <p>
             Please view this page on a laptop/Desktop!!
         </p>
     </section>
+
+    <!-- banner -->
+    <section class="bg">
+        <img src="./images/marvel-bg.png" alt="Treasure Hunt">
+    </section>
+
+    <!-- countdown and registration button -->
+    <section class="count-reg">
+        <h2 id="timeLeftHeading">Time Left to Start the Hunt...</h2>
+        <div class="countdown">
+            <div class="days">
+                <div id="day">00</div>
+                <div class="label">Days</div>
+            </div>
+            <div class="hours">
+                <div id="hour">00</div>
+                <div class="label">Hours</div>
+            </div>
+            <div class="minutes">
+                <div id="minute">00</div>
+                <div class="label">Minutes</div>
+            </div>
+            <div class="seconds">
+                <div id="second">00</div>
+                <div class="label">Seconds</div>
+            </div>
+        </div>
+
+        <hr>
+        <a href="https://forms.gle/nxGDnd2AUKQCDiYN9" target="_blank">
+            <button class="btn">
+                Register
+            </button>
+        </a>
+        <div class="bg"></div>
+    </section>
+    <!-- timeline -->
     <section class="timeline-section">
+        <h2>Event Timeline</h2>
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
@@ -104,6 +146,37 @@
                             A lot of goodies and swags awaits you
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prizes">
+        <h2>Prizes 🥳🎉</h2>
+        <div class="prize-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Top 3 Winner Teams</h1>
+                        <p>Win Google Goodies and Certificate of Excellence for each team member</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/winner.gif" alt="Avatar">
+                    </div>
+
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>All participants</h1>
+                        <p>Every participating team member will receive a Certificate of appreciation and Participation!
+                        </p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/participants.png" alt="Avatar">
+                    </div>
+
                 </div>
             </div>
         </div>
