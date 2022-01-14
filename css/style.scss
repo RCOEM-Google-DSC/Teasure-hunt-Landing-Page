@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@import "./banner", "./countDown", "./timeline", "./prizes", "./socials", "./faq";
+@import "./banner", "./about", "./countDown", "./timeline", "./prizes", "./socials", "./faq";
+
+@font-face {
+    font-family: marvel;
+    src: url("./../fonts/AvengeroRegular-zvgl.ttf");
+}
 
 * {
     margin: 0;
@@ -9,7 +14,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     background-color: black;
 }
@@ -46,4 +51,75 @@ body {
     #mobile-screen {
         display: flex;
     }
+}
+
+#logo {
+    position: fixed;
+    top: -6px;
+    left: 6px;
+    opacity: .8;
+    padding: 5px;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    img {
+        width: 44px;
+        margin-right: 8px;
+    }
+}
+
+.spidey {
+    position: fixed;
+    right: -40px;
+    bottom: -8px;
+    z-index: 100;
+    transform-origin: 50% 50%;
+
+    img {
+        width: 200px;
+    }
+
+    &:hover {
+        animation: rot 1.2s linear;
+    }
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.reg-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    transition: 200ms;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
 }

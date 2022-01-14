@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="GDSC Treasure Hunt">
+    <meta property="og:description" content="desc">
+    <meta property="og:image" content="./images/logo.svg">
+    <meta property="og:url" content="name.com">
+
+    <!-- Main Link Tags  -->
+    <link href="./images/logo.svg" rel="icon" type="image/png" sizes="16x16">
+    <link href="./images/logo.svg" rel="icon" type="image/png" sizes="32x32">
+
+
     <title> Treasure Hunt | Home Page | GDSC RCOEM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 
     <!-- count down -->
-    <script src="./scripts/counter.js"></script>
+    <script src="./scripts/counter.js" defer></script>
 
     <!-- faq -->
     <script src="./scripts/faq.js"></script>
@@ -20,6 +35,19 @@
 </head>
 
 <body>
+
+    <div id="logo">
+        <a href="https://rcoem-gdsc.netlify.app" target="_blank">
+            <img src="./images/logo.svg" alt="GDSC RCOEM Logo">
+            <div>GDSC RCOEM</div>
+        </a>
+    </div>
+
+    <div class="spidey" title="Register">
+        <a href="https://forms.gle/nxGDnd2AUKQCDiYN9" target="_blank">
+            <img src="./images/spidey.png" alt="">
+        </a>
+    </div>
 
     <!-- when page is opened in mobile -->
     <section id="mobile-screen">
@@ -31,6 +59,31 @@
     <!-- banner -->
     <section class="bg">
         <img src="./images/marvel-bg.png" alt="Treasure Hunt">
+    </section>
+
+    <!-- about -->
+    <section class="aboutSection">
+        <span class="spider-img"><img src="./images/about-spider.png" alt=""></span>
+        <div class="aboutContainer">
+
+            <div class="heading">
+                Hey there, It's GDSC RCOEM
+            </div>
+            <div class="aboutContent">
+                <p>
+                    We’re back with a jaw dropping surprise🥳! <br> <br> Looking for mind blowing, fun Marvel based
+                    activities to ignite the coder flame in yourself? <br> <br>Introducing “<strong> Marvelous Treasure
+                        Hunt</strong>”! Here’s a quick “WHAT,
+                    HOW & WHEN” of the event.<br><br> What?~ It’s a unique combination of riddles, crosswords, puzzles,
+                    social media tasks, coding activities and much more, specifically created and curated for all our
+                    coding and Marvel geeks.<br> <br>How?~
+                    The hunt will be a virtual event, which involves group participation and the winning teams get a
+                    chance to bag Google goodies🎁🤩. <br><br>When?~ The event is OTW and registration details would be
+                    released soon! Stay tuned and contact
+                    us if you have any queries.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- countdown and registration button -->
@@ -63,6 +116,7 @@
         </a>
         <div class="bg"></div>
     </section>
+
     <!-- timeline -->
     <section class="timeline-section">
         <h2>Event Timeline</h2>
@@ -142,7 +196,7 @@
                     <div class="content">
                         <h2 id="h2">Results</h2>
                         <p>
-                            <b>12:00 PM, 26th January 2022</b> <br>
+                            <b>6:00 PM, 25th January 2022</b> <br>
                             A lot of goodies and swags awaits you
                         </p>
                     </div>
@@ -150,6 +204,12 @@
             </div>
         </div>
     </section>
+
+    <div class="reg-btn">
+        <a href="https://forms.gle/nxGDnd2AUKQCDiYN9" target="_blank">
+            <img src="./images/regBtn.png" alt="">
+        </a>
+    </div>
 
     <section id="prizes">
         <h2>Prizes 🥳🎉</h2>
@@ -210,7 +270,14 @@
         </div>
         <button class="accordion">Whom can I contact to know more about the event?</button>
         <div class="panel">
-            <p>- Contact Tejas</p>
+            <p> <a href="https://www.linkedin.com/company/rcoem-google-dsc/">
+                    Contact Us
+                </a> on LinkedIn</p>
+        </div>
+        <button class="accordion">Is it free of cost?</button>
+        <div class="panel">
+            <p> Marvelous Treasure Event will be absolutely free of cost. We don't want to bring a barrier between you
+                and Avengers</p>
         </div>
     </section>
 
