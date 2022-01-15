@@ -3,6 +3,7 @@
     height: auto;
     background: #ED213A;
     background: linear-gradient(to right, #93291E, #ED213A);
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 1));
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     z-index: 1;
@@ -14,7 +15,7 @@
     position: absolute;
     right: 0;
     top: 72%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .widow-img img {
@@ -22,7 +23,6 @@
     /* right: 5%; */
     top: 127%;
     height: 20rem;
-    z-index: 0;
 }
 
 .thor-img img {
@@ -30,7 +30,6 @@
     right: -10%;
     height: 30rem;
     top: 120%;
-    z-index: 0;
     transform: scale(.5);
 }
 
@@ -39,7 +38,6 @@
     left: 10%;
     top: 20%;
     margin: auto;
-    /* backdrop-filter: blur(3px); */
     font-family: sans-serif;
 }
 
@@ -49,6 +47,7 @@
     font-family: marvel;
     font-weight: bold;
     margin-bottom: 2rem;
+    z-index: 2;
 }
 
 .aboutContent {
@@ -59,6 +58,7 @@
     text-align: justify;
     z-index: 20;
     padding: 20px;
+    z-index: 2;
 
     p {
         font-family: 'Montserrat', sans-serif;
