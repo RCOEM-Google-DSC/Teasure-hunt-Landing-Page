@@ -43,16 +43,6 @@ body {
     }
 }
 
-@media (max-width: 1000px) {
-    body {
-        overflow: hidden;
-    }
-
-    #mobile-screen {
-        display: flex;
-    }
-}
-
 #logo {
     position: fixed;
     top: -6px;
@@ -160,4 +150,19 @@ body {
     transform: rotate(16deg) translateY(-22px);
     right: 364px;
 
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+
+    #mobile-screen {
+        display: flex;
+    }
+
+    #loader {
+        display: none;
+    }
 }
