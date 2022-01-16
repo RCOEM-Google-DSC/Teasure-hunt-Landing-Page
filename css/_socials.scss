@@ -50,3 +50,15 @@
          color: red;
      }
  }
+
+
+ #globe {
+     width: 40px;
+     color: #fff;
+     margin-left: 10px;
+
+     &:hover {
+         transform: scale(1.25);
+         color: teal;
+     }
+ }
