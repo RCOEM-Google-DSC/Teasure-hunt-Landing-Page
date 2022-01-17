@@ -12,7 +12,7 @@ window.onload = () => {
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy,
-        dayMonth = "01/23/",
+        dayMonth = "01/27/",
         birthday = dayMonth + yyyy;
 
     today = mm + "/" + dd + "/" + yyyy;
