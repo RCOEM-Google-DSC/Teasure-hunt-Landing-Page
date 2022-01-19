@@ -166,3 +166,56 @@ body {
         display: none;
     }
 }
+
+.ama-btn {
+    padding: 8px 18px;
+    position: fixed;
+    top: 8px;
+    right: 14px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    animation: anim 1.5s linear 20;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 10;
+
+    i {
+        color: red;
+        font-size: xx-large;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        animation: none;
+        transform: scale(1);
+    }
+
+    &:active {
+        animation: none;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
